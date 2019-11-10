@@ -1,0 +1,10 @@
+<% include partials/header %>
+<h1>results page!!</h1>
+<div><ul>
+    <% data["Search"].forEach(function(movie){ %>
+        <li><%= movie["Title"] %></li>    
+    <% }) %>
+</ul>
+    <a href="/">SEARCH AGAIN!!</a>
+</div>
+<% include partials/footer %>
